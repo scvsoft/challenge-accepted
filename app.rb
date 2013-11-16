@@ -1,9 +1,24 @@
 require "cuba"
 
 LEVELS = {
-  1 => {
+  1: {
     nerd_level: 'LEVEL 1',
     next_link: "http://scvsoft.com/challenge-accepted/ch-2"
+  },
+  2: {
+    nerd_level: 'LEVEL 2',
+    next_link: "http://scvsoft.com/challenge-accepted/ch-3"
+  },
+  3: {
+    nerd_level: 'LEVEL 3',
+    next_link: "http://scvsoft.com/challenge-accepted/ch-4"
+  },
+  4: {
+    nerd_level: 'LEVEL 4',
+    next_link: "http://scvsoft.com/challenge-accepted/ch-5"
+  },
+  5: {
+    nerd_level: 'LEVEL 5',
   }
 }
 
@@ -12,6 +27,7 @@ Cuba.define do
     on post do
       on "ch-1" do
         on param('email'), param('code'), param('type') do |email, code, type|
+          puts " => code #{code}"
           t = Tempfile.new('code')
           begin
             t.write File.read('./ch-specs/ch-1_spec.rb')
