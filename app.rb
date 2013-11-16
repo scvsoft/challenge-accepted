@@ -27,7 +27,6 @@ Cuba.define do
     on post do
       on "ch-1" do
         on param('email'), param('code'), param('type') do |email, code, type|
-          puts " => code #{code}"
           t = Tempfile.new('code')
           begin
             t.write File.read('./ch-specs/ch-1_spec.rb')
