@@ -1,9 +1,24 @@
 require "cuba"
 
 LEVELS = {
-  1 => {
+  1: {
     nerd_level: 'LEVEL 1',
-    next_link: "http://scvsoft.com/challenge-accepted/ch-2"
+    next_link: "http://scvsoft.com/challenge-accepted/ea660fcbaf91db3d"
+  },
+  2: {
+    nerd_level: 'LEVEL 2',
+    next_link: "http://scvsoft.com/challenge-accepted/107ebb8c601db219"
+  },
+  3: {
+    nerd_level: 'LEVEL 3',
+    next_link: "http://scvsoft.com/challenge-accepted/eb86accd09f2b31d"
+  },
+  4: {
+    nerd_level: 'LEVEL 4',
+    next_link: "http://scvsoft.com/challenge-accepted/e0f4b7103bb86b9e"
+  },
+  5: {
+    nerd_level: 'LEVEL 5',
   }
 }
 
