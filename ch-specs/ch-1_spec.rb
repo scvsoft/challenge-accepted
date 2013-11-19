@@ -1,21 +1,8 @@
 require 'minitest/autorun'
+require_relative 'executor'
 
 TYPE = ENV['TYPE']
 CODE_PATH=ENV['CODE_PATH']
-
-class Executor
-  attr :type, :code_path
-
-  def initialize(type, code_path)
-    @type = type
-    @code_path = code_path
-  end
-
-  def execute(*args)
-    args_string = args.join(' ')
-    `ruby -T3 #{code_path} #{args_string}`.strip
-  end
-end
 
 describe 'Challenge 1' do
   before do
