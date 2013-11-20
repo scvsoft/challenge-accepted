@@ -1,3 +1,5 @@
+require 'timeout'
+
 class Executor
   attr :type, :code_path
 
@@ -8,6 +10,8 @@ class Executor
 
   def execute(*args)
     args_string = args.join(' ')
-    `ruby -T3 #{code_path} #{args_string}`.strip
+    Timeout::timeout(1) do
+      `ruby -T3 #{code_path} #{args_string}`.strip
+    end
   end
 end
