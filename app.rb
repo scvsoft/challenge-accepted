@@ -30,7 +30,7 @@ Cuba.define do
           sub = Submission.new(Challenge[0], code, type)
           if sub.passed?
             res.status = 200
-            res['X-NERD-LEVEL'] = LEVELS[1][:nerd_level]
+            res['X-NERD-LEVEL'] = LEVELS[0][:nerd_level]
             res.write LEVELS[0][:next_link]
           else
             res.status = 422
@@ -48,7 +48,7 @@ Cuba.define do
           if sub.passed?
             res.status = 200
             res['X-NERD-LEVEL'] = LEVELS[1][:nerd_level]
-            res.write LEVELS[2][:next_link]
+            res.write LEVELS[1][:next_link]
           else
             res.status = 422
             res.write "BAD!"

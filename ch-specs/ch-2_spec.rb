@@ -16,10 +16,10 @@ describe 'Challenge 2' do
     [['carte', 'cater', 'apers', 'asper', 'soco'], '2'],
     [[], '0'],
     [['uno', 'dos'], '0'],
-    [['roce', 'cero', 'roce', 'Dan al gran guia', 'Angel guardian'], '4'],
+    [['roce', 'cero', 'roce', "'Den al gran guia'", "'Angel guardian'"], '4'],
     [['uno'],'0'],
     [['Otto', 'Otto'], '1'],
-    [['One', 'en O', 'Once', 'ceno'], '2']
+    [['One', "'en O'", 'Once', 'ceno'], '2']
   ]
 
   CASES.each do |args, result|
