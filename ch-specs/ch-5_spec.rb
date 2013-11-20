@@ -16,6 +16,8 @@ describe 'Challenge 5' do
     [['I', 'am', 'new', 'here'], "Ianh\n mee\n  wr\n   e"],
     # Executor removes leading and trailing whitespace, so no spaces at the end.
     [['One', 'ring', 'to', 'rule', 'them', 'all'], "Ortrta\nniouhl\nen lel\n g em"],
+    [['Lost', 'a', 'planet', 'Obi-Wan', 'has'],
+      "LapOh\no lba\ns ais\nt n- \n  eW \n  ta \n   n" ]
   ]
 
   CASES.each do |args, result|
