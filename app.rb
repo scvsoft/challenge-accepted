@@ -1,26 +1,26 @@
 require "cuba"
 
-LEVELS = {
-  1 => {
+LEVELS = [
+  {
     nerd_level: 'LEVEL 1',
     next_link: "http://scvsoft.com/challenge-accepted/ea660fcbaf91db3d"
   },
-  2 => {
+  {
     nerd_level: 'LEVEL 2',
     next_link: "http://scvsoft.com/challenge-accepted/107ebb8c601db219"
   },
-  3 => {
+  {
     nerd_level: 'LEVEL 3',
     next_link: "http://scvsoft.com/challenge-accepted/eb86accd09f2b31d"
   },
-  4 => {
+  {
     nerd_level: 'LEVEL 4',
     next_link: "http://scvsoft.com/challenge-accepted/e0f4b7103bb86b9e"
   },
-  5 => {
+  {
     nerd_level: 'LEVEL 5',
   }
-}
+]
 
 Cuba.define do
   on 'challenge-accepted' do
@@ -28,6 +28,23 @@ Cuba.define do
       on "ch-1" do
         on param('email'), param('code'), param('type') do |email, code, type|
           sub = Submission.new(Challenge[0], code, type)
+          if sub.passed?
+            res.status = 200
+            res['X-NERD-LEVEL'] = LEVELS[0][:nerd_level]
+            res.write LEVELS[0][:next_link]
+          else
+            res.status = 422
+            res.write "BAD!"
+          end
+        end
+        on default do
+          res.status = 400
+        end
+      end
+
+      on "ea660fcbaf91db3d" do
+        on param('email'), param('code'), param('type') do |email, code, type|
+          sub = Submission.new(Challenge[1], code, type)
           if sub.passed?
             res.status = 200
             res['X-NERD-LEVEL'] = LEVELS[1][:nerd_level]
@@ -41,6 +58,7 @@ Cuba.define do
           res.status = 400
         end
       end
+
       on default do
         res.status = 404
       end
