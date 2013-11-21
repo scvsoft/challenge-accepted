@@ -109,7 +109,7 @@ div.how {
 	width: 267px;
 	height: 267px;
 	left: 376px;
-	top: 100px;
+	top: 110px;
 	z-index: 0;
 	transition-delay: 60ms;
 	-moz-transition-delay: 600ms; /* Firefox 4 */
@@ -126,10 +126,10 @@ div.prize {
 	-o-transition-delay: 700ms; 
 }
 
-div.twitter {
+div.startDate {
     background-image: url("../images/circle-sprite-smaller.png");
 	left: 696px;
-	top: 110px;
+	top: 130px;
 	z-index: 20;
 	width: 241px;
 	height: 241px;
@@ -137,6 +137,19 @@ div.twitter {
 	-moz-transition-delay: 800ms; /* Firefox 4 */
 	-webkit-transition-delay: 800ms; /* Safari and Chrome */
 	-o-transition-delay: 800ms; 
+}
+
+div.twitter {
+  background-image: url("../images/circle-sprite-smaller.png");
+	left: 820px;
+	top: 10px;
+	z-index: 0;
+	width: 241px;
+	height: 241px;
+	transition-delay: 900ms;
+	-moz-transition-delay: 900ms; /* Firefox 4 */
+	-webkit-transition-delay: 900ms; /* Safari and Chrome */
+	-o-transition-delay: 900ms; 
 }
 
 div.bubble:hover {
@@ -147,6 +160,10 @@ div.bubble:hover {
 
 div.how:hover {
 	background-position: 267px;
+}
+
+div.startDate:hover {
+	background-position: 241px;	
 }
 
 div.twitter:hover {
@@ -243,4 +260,8 @@ img.mainBanner.in {
 
 .facebookIcon:hover{
 	background: url("/images/facebook_hover.png") no-repeat;
+}
+
+div.bubble.startDate .container{
+	padding-top:18%;
 }
