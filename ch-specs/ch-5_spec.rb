@@ -14,7 +14,9 @@ describe 'Challenge 5' do
     [[''], ""],
     [['Hello', 'World'], "HW\neo\nlr\nll\nod"],
     [['I', 'am', 'new', 'here'], "Ianh\n mee\n  wr\n   e"],
-    # Executor removes leading and trailing whitespace, so no spaces at the end.
+    # Executor removes trailing whitespace, so no spaces at the end of expected results.
+    # Also, sending an empty string so that it will be interpreted by the console.
+    [["I", "have", '""', "to", "say"], "Ih ts\n a oa\n v  y\n e" ],
     [['One', 'ring', 'to', 'rule', 'them', 'all'], "Ortrta\nniouhl\nen lel\n g em"],
     [['Lost', 'a', 'planet', 'Obi-Wan', 'has'],
       "LapOh\no lba\ns ais\nt n- \n  eW \n  ta \n   n" ]
