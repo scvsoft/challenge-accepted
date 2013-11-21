@@ -156,7 +156,6 @@ div.twitter {
 div.bubble:hover {
 	background-position: 254px;
 	color: white;
-	cursor: pointer;
 }
 
 div.how:hover {
