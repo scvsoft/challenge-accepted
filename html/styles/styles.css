@@ -98,6 +98,7 @@ div.bubble {
 div.what {
 	top: 0;
 	left: 236px;
+	top: 10px;
 	transition-delay: 500ms;
 	-moz-transition-delay: 500ms; /* Firefox 4 */
 	-webkit-transition-delay: 500ms; /* Safari and Chrome */
@@ -109,7 +110,7 @@ div.how {
 	width: 267px;
 	height: 267px;
 	left: 376px;
-	top: 110px;
+	top: 125px;
 	z-index: 0;
 	transition-delay: 60ms;
 	-moz-transition-delay: 600ms; /* Firefox 4 */
