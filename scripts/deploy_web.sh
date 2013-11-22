@@ -9,4 +9,4 @@ sudo mkdir -p /var/www/scvweb/challenge-accepted
 
 sudo cp -r ../html/* /var/www/scvweb/challenge-accepted
 
-echo "Done.""
+echo "Done."
