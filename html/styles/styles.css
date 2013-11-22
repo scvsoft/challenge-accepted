@@ -96,7 +96,6 @@ div.bubble {
 }
 
 div.what {
-	top: 0;
 	left: 236px;
 	top: 10px;
 	transition-delay: 500ms;
