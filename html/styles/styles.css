@@ -19,11 +19,12 @@
 	font-style: normal;
 }
 
-body {
-	background-image: url("../images/full-bg.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	overflow: hidden;
+html {
+	background: url("../images/full-bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1 {
@@ -128,8 +129,8 @@ div.prize {
 
 div.startDate {
     background-image: url("../images/circle-sprite-smaller.png");
-	left: 696px;
-	top: 130px;
+	left: 676px;
+	top: 140px;
 	z-index: 20;
 	width: 241px;
 	height: 241px;
@@ -141,8 +142,8 @@ div.startDate {
 
 div.twitter {
   background-image: url("../images/circle-sprite-smaller.png");
-	left: 820px;
-	top: 10px;
+	left: 780px;
+	top: 0;
 	z-index: 0;
 	width: 241px;
 	height: 241px;
