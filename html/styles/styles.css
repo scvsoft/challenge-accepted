@@ -240,26 +240,26 @@ img.mainBanner.in {
 }
 
 .twitterIcon {
-	background: url("/images/twitter.png") no-repeat;
+	background: url("../images/twitter.png") no-repeat;
 }
 .twitterIcon:hover {
-	background: url("/images/twitter_hover.png") no-repeat;
+	background: url("../images/twitter_hover.png") no-repeat;
 }
 
 .githubIcon {
-	background: url("/images/github.png") no-repeat;
+	background: url("../images/github.png") no-repeat;
 }
 
 .githubIcon:hover {
-	background: url("/images/github_hover.png") no-repeat;
+	background: url("../images/github_hover.png") no-repeat;
 }
 
 .facebookIcon{
-	background: url("/images/facebook.png") no-repeat;
+	background: url("../images/facebook.png") no-repeat;
 }
 
 .facebookIcon:hover{
-	background: url("/images/facebook_hover.png") no-repeat;
+	background: url("../images/facebook_hover.png") no-repeat;
 }
 
 div.bubble.startDate .container{
