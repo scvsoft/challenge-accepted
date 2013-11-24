@@ -1,12 +1,12 @@
 require 'httparty'
 
 unless ARGV.size >= 3
-  puts "Usage: ruby test.rb CHALLENGE_NUMBER EMAIL TYPE < PATH_TO_CODEFILE"
+  puts "Usage: ruby test.rb CHALLENGE_NUMBER TOKEN TYPE < PATH_TO_CODEFILE"
   exit(-1)
 end
 
 challenge = ARGV.shift
-email = ARGV.shift
+token = ARGV.shift
 type = ARGV.shift
 code = ARGF.read
 
@@ -21,12 +21,12 @@ else
 end
 
 
-puts "Challenge: #{challenge} Email: #{email} Type: #{type}"
+puts "Challenge: #{challenge} Token: #{token} Type: #{type}"
 path = "http://localhost:9292/challenge-accepted/#{challenge_path}"
 puts "Path: #{path}"
 puts HTTParty.post(path, {
   body: {
-    email: email,
+    token: token,
     type: type,
     code: code
   }

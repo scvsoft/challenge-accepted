@@ -1,4 +1,5 @@
-require "cuba"
+require 'cuba'
+require 'ohm'
 require_relative 'lib/challenge'
 require_relative 'lib/submission'
 
@@ -29,9 +30,13 @@ Challenge.all = [
 
 Cuba.define do
   def self.handle_submission_for(challenge)
-    on param('email'), param('code'), param('type') do |email, code, type|
-      sub = Submission.new(challenge, code, type)
-      if sub.passed?
+    on param('token'), param('code'), param('type') do |token, code, type|
+      if challenge.passed?(code, type)
+        Submission.create(
+          challenge_number: challenge.number,
+          token: token,
+          code: code,
+          type: type)
         res.status = 200
         res['X-NERD-LEVEL'] = challenge.nerd_level
 

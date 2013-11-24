@@ -1,13 +1,15 @@
-class Submission < Struct.new(:challenge, :code, :type)
-  def passed?
-    t = Tempfile.new('code')
-    begin
-      t.write code
-      t.close
+class Submission < Ohm::Model
+  attribute :token
+  attribute :challenge_number
+  attribute :code
+  attribute :type
+  attribute :created_at
 
-      system "CODE_PATH=#{t.path} TYPE=#{type} ruby #{challenge.tests_path}"
-    ensure
-      t.unlink
-    end
+  index :token
+  index :challenge_number
+
+  def initialize(params = {})
+    params[:created_at] = Time.now.to_i
+    super
   end
 end
