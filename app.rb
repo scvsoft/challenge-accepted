@@ -2,6 +2,7 @@ require 'cuba'
 require 'ohm'
 require_relative 'lib/challenge'
 require_relative 'lib/submission'
+require_relative 'lib/registration'
 
 BASE_URL = "http://scvsoft.com/challenge-accepted/"
 
@@ -57,6 +58,24 @@ Cuba.define do
 
   on 'challenge-accepted' do
     on post do
+      on 'register' do
+        on param('email') do |email|
+          registration = Registration.new(email: email)
+          begin
+            if registration.save
+              res.status = 200
+              res.write "{ registration_token: #{registration.token} }"
+            else
+              res.status = 422
+              res.write "There was a problem with your registration: #{registration.errors}"
+            end
+          rescue Ohm::UniqueIndexViolation
+            res.status = 422
+            res.write "You are already registered with this email."
+          end
+        end
+      end
+
       Challenge.all.each do |challenge|
         on(challenge.path) { handle_submission_for(challenge) }
       end
