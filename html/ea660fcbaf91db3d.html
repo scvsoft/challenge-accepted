@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript">
+  $(window).load(function(){
+    $(".out").removeClass("out");
+    $("img.mainBanner").addClass("in");
+  });
+  </script>
+  <meta charset="utf-8">
+  <title>SCVSoft Challenge Accepted 2013 - Challenge 2</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+  <h1><img alt="SCV Soft" src="images/logo.png"/>
+    <span id="subheader">
+      <span class="code">Challenge</span>
+      <span class="happening">Accepted</span>
+      <span class="year">2013</span>
+    </span>
+  </h1>
+  <div id="mainContainer">
+    <div class="challenge">
+      <h2>Challenge 2</h2>
+      <h3>El problema de los anagramas</h3>
+      <p>Felicitaciones por resolver satisfactoriamente el primer ejercicio! Ya estas un paso mas cerca de obtener el preciado premio.</p>
+      <p>Dado que has demostrado una excelente habilidad para el manejo numérico, pensamos que ahora podes demostrar la habilidad en letras.</p>
+      <p>En este ejercicio el objetivo es encontrar pares de anagramas en una lista que te vamos a dar. Recordá, no buscamos <i>cuantas</i> palabras tienen anagramas, buscamos cuando <b>pares</b> de palabras que son anagramas entre si hay en una lista de palabras</p>
+      <p>Al igual que en el ejercicio anterior, lo que necesitarás es escribir un programa que reciba una lista de valores (strings) y devuelva un valor numérico que indique cuantos pares de palabras que son anagramas hay en la lista provista</p>
+      <p>Alguno de (pero no todos) los test que vamos a ejecutar son:</p>
+      <ul>
+        <li>Cuando le demos "carte", "cater" al programa, esperamos recibir un 1.</li>
+        <li>Cuando le demos "roce", "cero", "roce", "Den al gran guia", "Angel guardian"  al programa, esperamos recibir un 4. (si, roce y roce son anagramas de si mismo)</li>
+        <li>Cuando le demos "uno" al programa, esperamos recibir un 0.</li>
+      </ul>
+      <p>Si crees que tenes el código que pueda pasar todos nuestros test, manda un POST a la siguiente url:</p>
+      <div class="grey_box">
+        http://api.scvsoft.com/challenge-accepted/ea660fcbaf91db3d
+      </div>
+      <p>con los siguientes datos</p>
+      <ul>
+        <li><b>token:</b> El token que te dimos cuando te registraste.</li>
+        <li><b>type:</b> El lenguaje en el cual escribiste la solución: ruby o javascript.</li>
+        <li><b>code:</b> El código que resuelve los tests.</li>
+      </ul>
+
+      <p>Te dejamos un ejemplo en curl:</p>
+      <div class="grey_box">
+        curl -X POST -d 'token=&lt;YOUR_TOKEN&gt;&type=&lt;RUBY_OR_JS&gt;&code=&lt;CODE&gt;' http://api.scvsoft.com/challenge-accepted/ea660fcbaf91db3d
+      </div>
+
+      <p>Si el código es correcto entonces vas a recibir un 200 y la url del siguiente ejercicio. Caso contrario recibirás un 422 y que fue lo que falló.</p>
+
+      <p>Si sos bueno con las palabras, nos vemos en el ejercicio 3</p>
+    </div>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45956721-1', 'scvsoft.com');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>

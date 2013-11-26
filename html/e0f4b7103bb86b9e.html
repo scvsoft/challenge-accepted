@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript">
+  $(window).load(function(){
+    $(".out").removeClass("out");
+    $("img.mainBanner").addClass("in");
+  });
+  </script>
+  <meta charset="utf-8">
+  <title>SCVSoft Challenge Accepted 2013 - Final Challenge</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+  <h1><img alt="SCV Soft" src="images/logo.png"/>
+    <span id="subheader">
+      <span class="code">Challenge</span>
+      <span class="happening">Accepted</span>
+      <span class="year">2013</span>
+    </span>
+  </h1>
+  <div id="mainContainer">
+    <div class="challenge">
+      <h2>Challenge 5</h2>
+      <h3>A un paso de la gloria</h3>
+      <p>Has llegado al final del arco iris. El duende esta cuidando el tarro que contiene el preciado premio. Pero ten cuidado, no eres el único aquí.</p>
+      <p>El último ejercicio es un ejercicio de precisión, es la flecha que atraviesa la otra flecha. Solo quienes demuestren un excelente dominio de los bits serán quienes puedan
+      pasar este último desafío.</p>
+      <p>Tenemos un problema: Nos gusta mucho leer textos en forma vertical. Es nuestro hobbie, nuestra pasión. También la cerveza. Tomar cerveza y leer textos verticales es lo
+      que mas disfrutamos.</p>
+      <p>El otro día mientras tomábamos unas cervezas nos dimos cuenta que lo que haría mucho mas fácil nuestras vidas es tener alguna herramienta que pueda "verticalizar" los textos,
+      sobre todo cuando los niveles de cerveza en sangre son elevados.</p>
+      <p>Su misión va a ser escribir este programa. Dado una o varias palabras, el programa deberá imprimr las mismas palabras pero en vertical.</p>
+
+      <p>Alguno de (pero no todos) los test que vamos a ejecutar son:</p>
+      <ul>
+        <li>Cuando le demos "Hello" al programa, esperamos recibir 'H\ne\nl\nl\no'. (Una letra por linea)</li>
+        <li>Cuando le demos "Hello", "World" al programa, esperamos recibir 'HW\neo\nlr\nll\nod'.</li>
+        <li>Cuando le demos "One", "ring", "to", "rule", "them", "all" al programa, esperamos recibir "Ortrta\nniouhl\nen lel\n g em".</li>
+      </ul>
+      <p>Si crees que tenes el código que pueda pasar todos nuestros test, manda un POST a la siguiente url:</p>
+      <div class="grey_box">
+        http://api.scvsoft.com/challenge-accepted/e0f4b7103bb86b9e
+      </div>
+      <p>con los siguientes datos</p>
+      <ul>
+        <li><b>token:</b> El token que te dimos cuando te registraste.</li>
+        <li><b>type:</b> El lenguaje en el cual escribiste la solución: ruby o javascript.</li>
+        <li><b>code:</b> El código que resuelve los tests.</li>
+      </ul>
+
+      <p>Te dejamos un ejemplo en curl:</p>
+      <div class="grey_box">
+        curl -X POST -d 'token=&lt;YOUR_TOKEN&gt;&type=&lt;RUBY_OR_JS&gt;&code=&lt;CODE&gt;' http://api.scvsoft.com/challenge-accepted/e0f4b7103bb86b9e
+      </div>
+
+      <p>Si el código es correcto entonces vas a recibir un 200 y la url del siguiente ejercicio. Caso contrario recibirás un 422 y que fue lo que falló.</p>
+
+      <p>El primero que logre resolver este ejercicio será el ganador del iPad, quien logre resolverlo segundo será el ganador de un iPod nano.</p>
+    </div>
+
+    <!-- Auxilio! me tienen atrapado en un sotano obligandome a pensar ejercicios -->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45956721-1', 'scvsoft.com');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>
