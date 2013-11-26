@@ -21,8 +21,9 @@ def waterfall(ground_level)
   level.reduce(:+)
 end
 
+rand = Random.new
+
 500.times do
-  rand = Random.new
   list = (0..9).map { |index| rand.rand(1..9)}
   puts "[#{list.inspect}, '#{waterfall(list)}'],"
 end

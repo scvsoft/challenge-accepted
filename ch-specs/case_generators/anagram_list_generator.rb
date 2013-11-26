@@ -30,7 +30,12 @@ words = File.open('/usr/share/dict/words').read
 lists = words.group_by { |element| element.downcase.chars.sort }.values
 
 lists = lists.reject {|item| item.length < 2 }.sample(900).map do |list|
-  list + words.sample(7 - list.length)
+  if list.length > 7
+    list[0,7]
+  else
+    list + words.sample(7 - list.length)
+  end
+
 end
 
 lists.each {|list| puts "[#{list.inspect}, '#{anagram(list)}'],"}
