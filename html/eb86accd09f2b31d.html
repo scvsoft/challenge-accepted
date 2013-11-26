@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript">
+  $(window).load(function(){
+    $(".out").removeClass("out");
+    $("img.mainBanner").addClass("in");
+  });
+  </script>
+  <meta charset="utf-8">
+  <title>SCVSoft Challenge Accepted 2013 - Challenge 4</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+  <h1><img alt="SCV Soft" src="images/logo.png"/>
+    <span id="subheader">
+      <span class="code">Challenge</span>
+      <span class="happening">Accepted</span>
+      <span class="year">2013</span>
+    </span>
+  </h1>
+  <div id="mainContainer">
+    <div class="challenge">
+      <h2>Challenge 4</h2>
+      <h3>El dilema de la lluvia</h3>
+      <p>Gracias por ordenar nuestra habitación! Ya estas un paso mas cerca del iPad</p>
+      <p>El siguiente es un problema meteorológico. Te vamos a dar un conjunto de datos que van a representar paredes de diferentes alturas, imaginate que ahora llueve, llueve mucho,
+      debido a las alturas de las paredes algunas secciones van a quedar inundadas y otras no. El objetivo de este ejercicio es que encuentres cuantos litros de agua queda dentro de las paredes.</p>
+      <p>Cada sección de 1x1 que quede "inundada" cuenta como 1 litro de agua acumulada, el objetivo de tu programa es que nos diga cuantos litros totales quedan acumulados según los datos que le damos.</p>
+      <p>Alguno de (pero no todos) los test que vamos a ejecutar son:</p>
+      <ul>
+        <li>Cuando le demos "1,1,2"  al programa, esperamos recibir '0'.</li>
+        <li>Cuando le demos "2,1,1" al programa, esperamos recibir '1'.</li>
+        <li>Cuando le demos "2,5,1,2,3,4,7,7,6" al programa, esperamos recibir '10'.</li>
+      </ul>
+      <p>Si crees que tenes el código que pueda pasar todos nuestros test, manda un POST a la siguiente url:</p>
+      <div class="grey_box">
+        http://api.scvsoft.com/challenge-accepted/eb86accd09f2b31d
+      </div>
+      <p>con los siguientes datos</p>
+      <ul>
+        <li><b>token:</b> El token que te dimos cuando te registraste.</li>
+        <li><b>type:</b> El lenguaje en el cual escribiste la solución: ruby o javascript.</li>
+        <li><b>code:</b> El código que resuelve los tests.</li>
+      </ul>
+
+      <p>Te dejamos un ejemplo en curl:</p>
+      <div class="grey_box">
+        curl -X POST -d 'token=&lt;YOUR_TOKEN&gt;&type=&lt;RUBY_OR_JS&gt;&code=&lt;CODE&gt;' http://api.scvsoft.com/challenge-accepted/eb86accd09f2b31d
+      </div>
+
+      <p>Si el código es correcto entonces vas a recibir un 200 y la url del siguiente ejercicio. Caso contrario recibirás un 422 y que fue lo que falló.</p>
+
+      <p>Si puedes superar este ejercicio, te esperamos en el último ejercicio.</p>
+    </div>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45956721-1', 'scvsoft.com');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>
