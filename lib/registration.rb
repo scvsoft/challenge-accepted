@@ -13,8 +13,7 @@ class Registration < Ohm::Model
     assert_email :email
   end
 
-  def initialize(params = {})
-    params[:token] = SecureRandom.hex(16)
-    super
+  def generate_token
+    self.token = SecureRandom.hex(16)
   end
 end
