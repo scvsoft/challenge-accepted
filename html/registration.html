@@ -45,8 +45,6 @@
             type: 'POST',
             data: 'email=' + email
           }).done(function(data) {
-            console.log("OK: ");
-            console.log(data);
             response = JSON.parse(data);
             var html = "<div class='success'>";
             html += "Te has registrado de manera correcta. Por favor guardá este código que te servirá para participar:";
