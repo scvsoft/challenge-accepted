@@ -36,7 +36,7 @@ h1 {
 	text-transform: uppercase;
 	text-align: right;
 	font-size: 1.8em;
-	font-family: "DINPro-Regular";	
+	font-family: "DINPro-Regular";
 }
 
 #subheader {
@@ -73,7 +73,7 @@ h3 {
 }
 
 h3.out {
-	opacity: 0; 
+	opacity: 0;
 }
 
 #mainContainer {
@@ -102,7 +102,7 @@ div.what {
 	transition-delay: 500ms;
 	-moz-transition-delay: 500ms; /* Firefox 4 */
 	-webkit-transition-delay: 500ms; /* Safari and Chrome */
-	-o-transition-delay: 500ms; 
+	-o-transition-delay: 500ms;
 }
 
 div.how {
@@ -115,7 +115,7 @@ div.how {
 	transition-delay: 60ms;
 	-moz-transition-delay: 600ms; /* Firefox 4 */
 	-webkit-transition-delay: 600ms; /* Safari and Chrome */
-	-o-transition-delay: 600ms; 
+	-o-transition-delay: 600ms;
 }
 
 div.prize {
@@ -124,7 +124,7 @@ div.prize {
 	transition-delay: 700ms;
 	-moz-transition-delay: 700ms; /* Firefox 4 */
 	-webkit-transition-delay: 700ms; /* Safari and Chrome */
-	-o-transition-delay: 700ms; 
+	-o-transition-delay: 700ms;
 }
 
 div.startDate {
@@ -137,7 +137,7 @@ div.startDate {
 	transition-delay: 800ms;
 	-moz-transition-delay: 800ms; /* Firefox 4 */
 	-webkit-transition-delay: 800ms; /* Safari and Chrome */
-	-o-transition-delay: 800ms; 
+	-o-transition-delay: 800ms;
 }
 
 div.twitter {
@@ -150,7 +150,7 @@ div.twitter {
 	transition-delay: 900ms;
 	-moz-transition-delay: 900ms; /* Firefox 4 */
 	-webkit-transition-delay: 900ms; /* Safari and Chrome */
-	-o-transition-delay: 900ms; 
+	-o-transition-delay: 900ms;
 }
 
 div.bubble:hover {
@@ -163,11 +163,11 @@ div.how:hover {
 }
 
 div.startDate:hover {
-	background-position: 241px;	
+	background-position: 241px;
 }
 
 div.twitter:hover {
-	background-position: 241px;	
+	background-position: 241px;
 }
 
 div.bubble .container {
@@ -236,7 +236,7 @@ img.mainBanner.in {
 .twitter a span{
 	width: 50px;
 	height: 50px;
-	display: inline-block;	
+	display: inline-block;
 }
 
 .twitterIcon {
@@ -264,4 +264,62 @@ img.mainBanner.in {
 
 div.bubble.startDate .container{
 	padding-top:18%;
+}
+
+
+
+div.registration_form {
+	padding-top: 100px;
+	float: right;
+}
+
+div.registration_form input[type='text'] {
+	font-size: 40px;
+	padding: 10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+div.registration_form input[type='submit'] {
+	padding: 10px 16px;
+	font-size: 30px;
+	line-height: 1.33;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	color: #fff;
+	background-color: #428bca;
+	border-color: #357ebd;
+	display: inline-block;
+	margin-bottom: 0px;
+	font-weight: normal;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	margin-bottom: 30px;
+}
+
+div.success {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+div.success .registration_code {
+	background-color: #bbb;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	padding: 15px;
+	text-align: center;
+}
+
+div.registration_form .errors {
+	color: red;
+	font-size: 20px;
 }
