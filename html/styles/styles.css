@@ -429,12 +429,21 @@ div.contenido.out {
 }
 
 div.contenido{
+	position: absolute;
+	width: 600px;
 	left: 320px;
 	top: 50px;
 	padding: 20px;
-	position: absolute;
-	width: 600px	;
 	z-index: 10;
+	font-family: "DINPro-Regular";
+	color:white;
+	font-size: 1em;
+	background-color: #254F43;
+	border-color: white;
+	border-width: 6px;
+	border-style: solid;
+	border-radius: 25px;
+	box-shadow: 0px 0px 10px #558778;
 	transition: top 2s;
 	-moz-transition: top 2s;
 	-webkit-transition: top 2s;
@@ -442,11 +451,7 @@ div.contenido{
 	transition-delay: 500ms;
 	-moz-transition-delay: 500ms; /* Firefox 4 */
 	-webkit-transition-delay: 500ms; /* Safari and Chrome */
-	-o-transition-delay: 500ms;	
-	font-family: "DINPro-Regular";
-	background-color: #254f43;
-	color:white;
-	font-size: 1em;
+	-o-transition-delay: 500ms;		
 }
 
 div.contenido h4 {
@@ -464,7 +469,11 @@ div.contenido p{
 }
 
 div.contenido a{
-	color: white;
+	color: #AEDCCF;
 	font-size: 2em;
 	text-decoration: none;
+}
+
+div.contenido a:hover{
+	color: white;
 }
