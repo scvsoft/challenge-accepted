@@ -371,7 +371,6 @@ div.registration_form {
 	-moz-transition-delay: 500ms; /* Firefox 4 */
 	-webkit-transition-delay: 500ms; /* Safari and Chrome */
 	-o-transition-delay: 500ms;	
-
 }
 
 div.registration_form input[type='text'] {
