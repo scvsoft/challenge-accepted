@@ -61,11 +61,17 @@ h1 span.happening {
 	color: #AEDCCF;
 }
 
+h2 {
+	font-size: 60px;
+	text-align: center;
+}
+
 h3 {
 	font-family: "DINPro-Regular";
 	color: #ABABAB;
 	font-size: 1.4em;
 	margin-top: 50px;
+	margin-bottom: 20px;
 	transition: opacity 1s;
 	-moz-transition: opacity 1s;
 	-webkit-transition: opacity 1s;
@@ -206,6 +212,47 @@ div.out {
 	top: 2000px;
 }
 
+div.grey_box {
+	background-color: #ccc;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-khtml-border-radius: 9px;
+	font-size: 21px;
+	text-align: center;
+	padding: 5px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+div.challenge p {
+	font-size: 23px;
+	padding-bottom: 10px;
+	line: 1.2;
+}
+
+div.challenge ul {
+	list-style-type: disc;
+	padding-bottom: 20px;
+}
+
+div.challenge ul li {
+	font-size: 23px;
+	padding-left: 10px;
+}
+
+div.challenge h3 {
+	font-family: "DINPro-Regular";
+	color: #ABABAB;
+	font-size: 30px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;
+}
+
 img.mainBanner {
 	transition: left 1s ease 500ms;
 	-moz-transition: left 1s ease 500ms;
@@ -265,8 +312,6 @@ img.mainBanner.in {
 div.bubble.startDate .container{
 	padding-top:18%;
 }
-
-
 
 div.registration_form {
 	padding-top: 100px;
