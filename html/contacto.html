@@ -6,12 +6,12 @@
   <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
   <script type="text/javascript">
   $(window).load(function(){
-    $('.out').removeClass('out');
+    $(".out").removeClass("out");
     $("img.mainBanner").addClass("in");
   });
   </script>
   <meta charset="utf-8">
-  <title>SCVSoft Challenge Accepted 2013 - Registrate</title>
+  <title>SCVSoft Challenge Accepted 2013 - Contacto</title>
   <link rel="shortcut icon" href="favicon.ico" />
 </head>
 <body>
@@ -23,9 +23,9 @@
         <li class="border">&nbsp;</li>
         <li><a href="reglas.html">REGLAS</a></li>
         <li class="border">&nbsp;</li>
-        <li><a href="contacto.html">CONTACTO</a></li>
+        <li class="selected"><a href="contacto.html">CONTACTO</a></li>
         <li class="border">&nbsp;</li>
-        <li class="selected"><a href="registration.html">REGISTRATE</a></li>
+        <li><a href="registration.html">REGISTRATE</a></li>
       </ul>
     </div>
     <span id="subheader">
@@ -35,40 +35,12 @@
     </span>
   </div>
   <div id="mainContainer">
-    <h3 class="out">Para participar necesitas estar registrado.</h3>
+    <h3 class="out">Contactános, queremos contestarte todas tus preguntas!.</h3>
     <img alt="Challenge Accepted 2013" src="images/challenge-accepted 2013-01.png" class="mainBanner out" />
-
-    <div class="registration_form out">
-      <form method="POST">
-        <div class="errors">
-        </div>
-        <input type="text" name="email" value="" placeholder="Ingresá tu email"></input>
-        <input type="submit" value="registrate!"></input>
-      </form>
-    </div>
-
-    <script type="text/javascript">
-      $(function() {
-        $(".registration_form").submit(function(ev) {
-          ev.preventDefault();
-          var email = $('.registration_form input[name="email"]').val();
-          $.ajax({
-            url: 'http://localhost:9292/challenge-accepted/register',
-            type: 'POST',
-            data: 'email=' + email
-          }).done(function(data) {
-            response = JSON.parse(data);
-            var html = "<div class='success'>";
-            html += "Te has registrado de manera correcta. Por favor guardá este código que te servirá para participar:";
-            html += "<div class='registration_code'>" + response.registration_token + "</div>";
-            html += "</div>";
-            $('.registration_form').html(html);
-          }).fail(function(data) {
-            $('.registration_form .errors').html('<p>' + data.responseText + '</p>');
-          });
-        });
-      });
-    </script>
+    <div id="contacto" class="contenido out">
+      <h4>Contacto</h4>
+      <p><a href="mailto:info@scvsoft.com">info@scvsoft.com</a></p>
+    <div>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
