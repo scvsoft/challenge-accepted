@@ -475,5 +475,12 @@ div.contenido a{
 }
 
 div.contenido a:hover{
-	color: white;
+	color: white	;
+}
+
+#contacto{
+	background-image: url('../images/contact.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 140px;
 }
