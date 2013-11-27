@@ -239,6 +239,10 @@
     padding-left:0;
   }
 
+  #contacto a{
+    color: #254F43;
+  }
+
   #contacto a:hover{
     color: #F9A11B;
   }
