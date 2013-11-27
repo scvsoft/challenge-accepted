@@ -193,6 +193,112 @@
     height:10px;
     background-color: #254F43;
     display:block;
+    margin-top:20px;
   }
 
+  div.contenido{
+    text-align: left;
+    position: static;
+    width: auto;
+    left: auto;
+    top: auto;
+    padding: 20px;
+    z-index: 1;
+    font-family: "DINPro-Regular";
+    font-size: 1em;
+    background-color: inherit;
+    border-color: none;
+    border-width: 0;
+    border-style: none;
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
+    -moz-transition:none;
+    -webkit-transition:none;
+    -o-transition: none;
+    transition-delay: none;
+    -moz-transition-delay: none; /* Firefox 4 */
+    -webkit-transition-delay: none; /* Safari and Chrome */
+    -o-transition-delay: none;   
+  }
+
+  div.contenido p{
+    text-align: left;
+    margin-bottom: 10px;
+    color: #316959;
+  }
+
+  #contacto{
+    background-image: none;
+    background-repeat: none;
+    background-position: none;
+    padding-left:0;
+  }
+
+  #contacto a:hover{
+    color: #F9A11B;
+  }
+
+  div.registration_form {
+    padding-top: 20px;
+    left: 0;
+    top: 0; 
+    position: static;
+    z-index: 1;
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+
+    transition-delay:none;
+    -moz-transition-delay:none; /* Firefox 4 */
+    -webkit-transition-delay:none; /* Safari and Chrome */
+    -o-transition-delay: none; 
+  }
+
+  div.registration_form input[type='text'] {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    display:block;
+    width:100%;
+  }
+
+  div.registration_form input[type='submit'] {
+    display:block;
+    padding: 10px 16px;
+    font-size: 30px;
+    line-height: 1.33;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    color: #fff;
+    background-color: #254F43;
+    border-color: #357ebd;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width:100%;
+  }
+
+  div.registration_form input[type='submit']:hover {
+    background-color: #F9A11B;
+  }
+
+  .bb {
+    box-sizing: border-box; /* css3 rec */
+    -moz-box-sizing: border-box; /* ff2 */
+    -ms-box-sizing: border-box; /* ie8 */
+    -webkit-box-sizing: border-box; /* safari3 */
+    -khtml-box-sizing: border-box; /* konqueror */
+  }
 }
