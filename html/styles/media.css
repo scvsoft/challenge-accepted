@@ -1,4 +1,5 @@
-@media only screen and (max-device-width: 480px) {
+/*@media only screen and (max-device-width: 480px) {*/
+@media only screen and (max-width: 480px) {
 
   html{
     background-image:none;
@@ -309,4 +310,13 @@
     -webkit-box-sizing: border-box; /* safari3 */
     -khtml-box-sizing: border-box; /* konqueror */
   }
+  
+  div.success{
+    text-align:left;
+  }
+
+  div.success .registration_code{
+    margin-top:20px;
+  }
+
 }
