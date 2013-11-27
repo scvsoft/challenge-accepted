@@ -48,7 +48,7 @@ Cuba.define do
         end
       else
         res.status = 422
-        res.write "WRONG!"
+        res.write "WRONG! The output of the test was: #{challenge.output}"
       end
     end
     on default do
