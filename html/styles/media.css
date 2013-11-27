@@ -1,0 +1,200 @@
+@media (max-width: 767px) {
+
+  html{
+    background-image:none;
+  }
+
+  #navbar{
+    text-align:left;
+  }
+
+  #navbar img {
+    float:none;
+    padding-left:10px;
+    margin-top:5px;
+  }
+
+  #navbar span, #navbar #links{
+    display:none;
+  }
+
+  #responsive-links{
+    display:block;
+    font-family:"DINPro-Regular";
+  }
+
+  #responsive-links ul{
+    margin:0;
+    padding:0;
+  }
+
+  #responsive-links a{
+    padding-left: 10px;
+    display:block;
+    text-decoration:none;
+    color:#254F43;
+    background-color: #AEDCCF;
+    line-height:1.5em;
+  }
+
+  #responsive-links a:hover{
+    color:#F9A11B;
+    background-color:#254F43;
+  }  
+
+  #responsive-links li.selected a{
+    color:#F9A11B;
+    background-color:#254F43;
+  }
+
+  #mainContainer {
+    width:auto;
+    padding:0 10px;
+    margin:0;
+    position:static;
+    text-align:center;
+  }
+
+  h3 {
+    font-family:"DINPro-Regular";
+    color:#ABABAB;
+    font-size:1.3em;
+    margin-top:20px;
+    margin-bottom:0;
+    transition:none;
+    -moz-transition:none;
+    -webkit-transition:none;
+    -o-transition:none;
+    text-align:left;
+    word-wrap:break-word;
+  }
+
+  img.mainBanner {
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    margin-left:0;
+    position: static;
+    left:0;
+  }
+
+  div.bubble {
+    color: #AEDCCF;
+    background-image: none;
+    width:auto;
+    height:auto;
+    position:static;
+    z-index:auto;
+    transition:none;
+    -moz-transition:none;
+    -webkit-transition:none;
+    -o-transition:none;
+    display:none;
+  }
+
+  div.what {
+    position:static;
+    transition-delay:none;
+    -moz-transition-delay:none; /* Firefox 4 */
+    -webkit-transition-delay:none; /* Safari and Chrome */
+    -o-transition-delay:none;
+    background-image: none;
+  }
+
+  div.how {
+    position:static;
+    width:auto;
+    height:auto;
+    transition-delay:none;
+    -moz-transition-delay:none; /* Firefox 4 */
+    -webkit-transition-delay:none; /* Safari and Chrome */
+    -o-transition-delay:none;
+    background-image: none;
+  }
+
+  div.prize {
+    position:static;
+    width:auto;
+    height:auto;
+    transition-delay:none;
+    -moz-transition-delay:none; /* Firefox 4 */
+    -webkit-transition-delay:none; /* Safari and Chrome */
+    -o-transition-delay:none;
+    background-image: none;
+  }
+
+  div.startDate {
+    position:static;
+    width:auto;
+    height:auto;
+    transition-delay:none;
+    -moz-transition-delay:none; /* Firefox 4 */
+    -webkit-transition-delay:none; /* Safari and Chrome */
+    -o-transition-delay:none;
+    background-image: none;
+  }
+
+  div.twitter {
+    background-image: url("../images/circle-sprite-smaller.png");
+    position:static;
+    width:auto;
+    height:auto;
+    transition-delay:none;
+    -moz-transition-delay:none; /* Firefox 4 */
+    -webkit-transition-delay:none; /* Safari and Chrome */
+    -o-transition-delay:none;
+    background-image: none;
+  }
+
+  div.bubble .container {
+    height:auto;
+    width:auto;
+    margin:0;
+    padding-top:0;
+    text-align:left;
+    font-family: "HelveticaNeueLT Std Med Cn";
+    font-size: 0.825em;
+    line-height: 1.2em;
+  }
+
+  .responsive{
+    display:block;
+    text-align:left;
+    font-family: "HelveticaNeueLT Std Med Cn";
+    font-size: 0.825em;
+    line-height: 1.2em;
+  }
+  
+  .responsive h4{
+    font-family: "Lobster Two";
+    color: #F9A11B;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    line-height: 1.1em;
+  }
+  
+  .responsive p{
+    color: #316959;
+    margin-bottom:10px;
+    font-size:1.1em;
+    line-height: 1.3em;
+  }
+
+  .responsive p a{
+    color:#F9A11B;
+    text-decoration: none;
+  }  
+
+  .responsive strong {
+    color: #F9A11B;
+    text-decoration: none;
+  }
+
+  #footer{
+    height:10px;
+    background-color: #254F43;
+    display:block;
+  }
+
+}

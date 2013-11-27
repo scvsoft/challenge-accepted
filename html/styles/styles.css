@@ -484,3 +484,9 @@ div.contenido a:hover{
 	background-position: left center;
 	padding-left: 140px;
 }
+
+#responsive-links{
+	display:none;
+}
+.responsive{display:none;}
+#footer{display:none;}
