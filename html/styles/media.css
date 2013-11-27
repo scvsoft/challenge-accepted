@@ -8,6 +8,10 @@
     text-align:center;
   }
 
+  #subheader{
+    display:none;
+  }
+
   #navbar img {
     margin-top:5px;
   }
