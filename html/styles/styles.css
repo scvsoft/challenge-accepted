@@ -377,6 +377,7 @@ div.registration_form input[type='text'] {
 	font-size: 40px;
 	padding: 10px;
 	border-radius: 10px;
+	width: 380px;
 	-moz-border-radius: 10px;
 	-khtml-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -401,7 +402,7 @@ div.registration_form input[type='submit'] {
 	vertical-align: middle;
 	cursor: pointer;
 	border: 1px solid transparent;
-	margin-bottom: 30px;
+	margin-bottom: 23px;
 }
 
 div.success {
