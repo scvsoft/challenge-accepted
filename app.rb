@@ -60,7 +60,7 @@ Cuba.define do
     on post do
       on 'register' do
         on param('email') do |email|
-          registration = Registration.new(email: email)
+          registration = Registration.new(email: email.downcase)
           registration.generate_token
           res['Access-Control-Allow-Origin'] = "*"
           begin
@@ -72,7 +72,7 @@ Cuba.define do
               res.write "Hubo un problema con tu registración: Email incorrecto."
             end
           rescue Ohm::UniqueIndexViolation
-            registration = Registration.find(email: email).first
+            registration = Registration.find(email: email.downcase).first
             res.status = 200
             res.write "{ \"registration_token\": \"#{registration.token}\"}"
           end
