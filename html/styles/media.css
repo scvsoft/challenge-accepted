@@ -232,6 +232,12 @@
     margin-bottom: 10px;
     color: #316959;
   }
+  
+  div.contenido ol li{
+    text-align: left;
+    margin-bottom: 10px;
+    color: #316959;
+  }  
 
   #contacto{
     background-image: none;

@@ -490,3 +490,11 @@ div.contenido a:hover{
 }
 .responsive{display:none;}
 #footer{display:none;}
+
+#reglas ol{
+	list-style-type: decimal;
+	list-style-position: inside;
+}
+#reglas ol li{
+	margin-bottom:10px;
+}
