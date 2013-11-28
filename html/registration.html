@@ -41,7 +41,7 @@
           ev.preventDefault();
           var email = $('.registration_form input[name="email"]').val();
           $.ajax({
-            url: 'http://localhost:9292/challenge-accepted/register',
+            url: 'http://api.scvsoft.com/challenge-accepted/register',
             type: 'POST',
             data: 'email=' + email
           }).done(function(data) {
