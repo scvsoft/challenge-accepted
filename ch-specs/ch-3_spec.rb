@@ -1,4 +1,3 @@
-require 'minitest/autorun'
 require_relative 'executor'
 
 TYPE = ENV['TYPE']
@@ -17,7 +16,7 @@ describe 'Challenge 3' do
 
   CASES.each do |args, result|
     it "returns #{result} to param #{args}" do
-      @executor.execute(*args).must_equal result
+      expect(@executor.execute(*args)).to eq result
     end
   end
 end
