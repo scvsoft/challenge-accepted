@@ -18,7 +18,7 @@ class Executor
         `ruby -T3 #{code_path} #{args_string}`.strip
       when "js", "javascript"
         args_string += " #{code_path}"
-        `nodejs ch-specs/node_sandbox.js #{args_string}`.strip
+        `node ch-specs/node_sandbox.js #{args_string}`.strip
       end
     end
   end
