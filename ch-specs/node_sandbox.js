@@ -7,12 +7,8 @@ var fs = require('fs'),
         log: console.log
       },
       process: {
-        argv: process.argv
+        argv: process.argv.slice(2)
       }
     };
 
-fs.readFile(codePath, function (err, data) {
-  if (err) throw err;
-  var code = vm.createScript(data);
-  code.runInNewContext(sandbox);
-});
+vm.runInNewContext(fs.readFileSync(codePath), sandbox);

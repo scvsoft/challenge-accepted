@@ -5,4 +5,4 @@ fibo = function(element) {
   return parseInt(0.5 + Math.pow(phi, element) / Math.sqrt(5));
 }
 
-console.log(fibo(args[2]));
+console.log(fibo(args[0]));

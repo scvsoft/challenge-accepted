@@ -8,4 +8,4 @@ function fibo(n){
   }
 }
 
-console.log(fibo(args[2]));
+console.log(fibo(args[0]));
