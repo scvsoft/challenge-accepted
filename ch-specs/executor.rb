@@ -17,8 +17,8 @@ class Executor
       when "ruby"
         `ruby -T3 #{code_path} #{args_string}`.strip
       when "js"
-        open(code_path, 'a') { |f| f.puts "phantom.exit();" }
-        `phantomjs #{code_path} #{args_string}`.strip
+        args_string += " #{code_path}"
+        `nodejs ch-specs/node_sandbox.js #{args_string}`.strip
       end
     end
   end

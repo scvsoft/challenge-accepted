@@ -1,4 +1,4 @@
-var args = require('system').args;
+var args = process.argv;
 
 function fibo(n){
   if(n <= 1){
@@ -8,4 +8,4 @@ function fibo(n){
   }
 }
 
-console.log(fibo(args[1]));
+console.log(fibo(args[2]));
