@@ -252,22 +252,52 @@ div.out {
 }
 
 div.grey_box {
+	color:#254F43;
 	background-color: #ccc;
 	border-radius: 9px;
 	-moz-border-radius: 9px;
 	-webkit-border-radius: 9px;
 	-khtml-border-radius: 9px;
-	font-size: 21px;
+	font-size: 1.2em;
 	text-align: center;
-	padding: 5px;
+	padding: 10px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
 
+div.challenge{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: 30px;
+	padding: 20px;
+	z-index: 10;
+	font-family: "DINPro-Regular";
+	color:white;
+	background-color: #254F43;
+	border-color: white;
+	border-width: 6px;
+	border-style: solid;
+	border-radius: 25px;
+	box-shadow: 0px 0px 10px #558778;
+	transition: top 1s;
+	-moz-transition: top 2s;
+	-webkit-transition: top 2s;
+	-o-transition: top 2s;
+	transition-delay: 200ms;
+	-moz-transition-delay: 200ms; /* Firefox 4 */
+	-webkit-transition-delay: 200ms; /* Safari and Chrome */
+	-o-transition-delay: 200ms;
+}
+
+div.challenge.out{
+	top: 1000px;
+}
+
 div.challenge p {
-	font-size: 23px;
+	font-size: 1em;
 	padding-bottom: 10px;
-	line: 1.2;
+	line-height: 1.3em;
 }
 
 div.challenge ul {
@@ -276,20 +306,36 @@ div.challenge ul {
 }
 
 div.challenge ul li {
-	font-size: 23px;
+	font-size: 1.1em;
+	line-height: 1.2em;
 	padding-left: 10px;
+	list-style-position: inside;
+}
+
+div.challenge h2 {
+	font-family: "Lobster Two";
+	color: #F9A11B;
+	font-size: 3em;
 }
 
 div.challenge h3 {
 	font-family: "DINPro-Regular";
-	color: #ABABAB;
-	font-size: 30px;
-	margin-top: 50px;
-	margin-bottom: 20px;
-	transition: opacity 1s;
-	-moz-transition: opacity 1s;
-	-webkit-transition: opacity 1s;
-	-o-transition: opacity 1s;
+	color: #AEDCCF;
+	font-size: 1.8em;
+	margin: 20px 0;
+}
+
+div.challenge h5 {
+	font-family: "Lobster Two";
+	color: #F9A11B;
+	font-size: 2em;
+	text-align: center;
+	margin: 20px 0;
+}
+
+div.challenge img{
+	display:block;
+	margin:10px 0;
 }
 
 img.mainBanner {
@@ -469,14 +515,19 @@ div.contenido p{
 	color: rgb(174, 220, 207);
 }
 
-div.contenido a{
+div.contenido a.email{
 	color: #AEDCCF;
 	font-size: 2em;
 	text-decoration: none;
 }
 
-div.contenido a:hover{
-	color: white	;
+div.contenido a:hover, div.contenido a.email:hover{
+	color: white;
+}
+
+div.contenido a{
+	color: #F9A11B;
+	text-decoration: none;
 }
 
 #contacto{
