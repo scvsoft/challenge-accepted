@@ -17,34 +17,46 @@
 <body>
 
   <div id="navbar">
-    <img alt="SCV Soft" src="images/logo.png"/> 
+    <img alt="SCV Soft" src="images/logo.png"/>
     <span id="subheader">
       <span class="code">Challenge</span>
       <span class="happening">Accepted</span>
       <span class="year">2013</span>
     </span>
   </div>
-  
+
   <div id="mainContainer">
     <div class="challenge out">
       <h2>Challenge 3</h2>
-      <h3>El paraiso de Sokoban</h3>
+      <h3>Jugando con cartas</h3>
       <p>Salve!, Oh, Amo de los números y de las palabras. Resolviste tan rápido los ejercicios anteriores que casi no llegamos a escribir este.</p>
       <p>En esta ocasión pensamos en poner un desafío un poco mas complicado, un desafío digno de alguien que domina los números y las palabras.</p>
-      <p>Imaginate que estas delante de un cuarto de determinadas dimensiones, y afuera de ese cuarto hay varias cajas de varias dimensiones. También imaginate que tenes que ubicar
-      la mayor cantidad de cajas dentro de la habitación siguiendo las siguientes premisas:</p>
+      <p>Resulta que nos gusta mucho jugar al Poker.
+      El problema es que pasamos tanto tiempo pensando ejercicios que nos resulta dificil recordar las manos del juego y es por esto que necesitamos una herramienta que nos las recuerde.
+      Es aqui donde entra tu experiencia, seras el encargado de generar esta herramienta!</p>
+      <p>Las cartas de poker estan formadas por dos caracteres que definen el valor y el palo.</p>
+      <p>Los valores van del 2 al 9, el as se representa con una A y luego el diez mas las figuras se representan con D J Q y K</p>
+      <p>Los palos son cuatro: Corazones (C), Picas (P), Rombos (R) o Treboles (T).</p>
+      <p>Es asi que por ejemplo el 2 de corazones se representa "2C", el 10 de picas "DP" y el as de treboles "AT"</p>
+      <p>Las jugadas posibles en el poker son las siguientes:</p>
       <ul>
-        <li>La habitación debe llenarse completamente.</li>
-        <li>Deben ubicarse la mayor cantidad de cajas posibles, sin importar el tamaño.</li>
+        <li>carta mas alta: todas cartas de diferentes valores que no forman escalera.</li>
+        <li>par: solo dos cartas del mismo valor.</li>
+        <li>doble par: dos juegos de dos cartas con el mismo valor.</li>
+        <li>pierna: tres cartas del mismo valor.</li>
+        <li>escalera: cinco cartas de distinto palo y valores consecutivos, el A puede estar delante del 2 o despues de la K.</li>
+        <li>color: cinco cartas del mismo palo que no formen escalera.</li>
+        <li>full: tres cartas de un mismo valor y dos de otro valor diferente (pero iguales entre si). Es decir una pierna y un par.</li>
+        <li>poker: cuatro cartas de un mismo valor.</li>
+        <li>escalera de color: cinco cartas del mismo palo y valores consecutivos, el A puede estar delante del 2 o despues de la K.</li>
+        <li>escalera real: 'escalera de color' con los valores mas altos; A K J Q D.</li>
       </ul>
-      <p>¿Cual es la combinación de cajas que cumpliría ambas premisas?</p>
       <br />
-      <p>En este ejercicio te vamos a dar un conjunto de dimensiones (correspondientes a la habitación), seguido de varios conjuntos de dimensiones (correspondientes a las cajas disponibles). Cabe aclarar que el número de cajas que hay es ilimitado, solo necesitas enfocarte en resolver cuantas necesitas para cumplir las premisas.</p>
-      <p>Tanto las dimensiones de la habitación como las dimensiones de las cajas tienen la siguiente forma: alto, ancho, profundidad</p>
+      <p>En este ejercicio te vamos a dar una lista con las 5 cartas de una mano, esperando recibir la jugada mas alta posible para dicha mano.</p>
       <p>Alguno de (pero no todos) los test que vamos a ejecutar son:</p>
       <ul>
-        <li>Cuando le demos "1,1,1", "1,1,1" al programa, esperamos recibir '1'. (Una habitación de 1x1x1 y cajas de 1x1x1...entra una sola caja y llena la habitación)</li>
-        <li>Cuando le demos "1,1,1", "1,1,1", "0.5,0.5,0.5"  al programa, esperamos recibir '0,8'. (Si bien con una caja de 1x1x1 llenamos la habitación, la mayor cantidad de cajas se da con 8 de .5 x .5 x .5)</li>
+        <li>Cuando le demos QC 5R 3T AP JC al programa, esperamos recibir 'carta mas alta' (no tenemos nunguna combinacion valida de valores o palos).</li>
+        <li>Cuando le demos AC KC QC JC DC al programa, esperamos recibir 'escalera real' (todas las cartas del mismo palo - C - y de los 5 valores consecutivos mas altos - D J Q K A).</li>
       </ul>
       <p>Si crees que tenes el código que pueda pasar todos nuestros test, manda un POST a la siguiente url:</p>
       <div class="grey_box">
@@ -64,7 +76,7 @@
 
       <p>Si el código es correcto entonces vas a recibir un 200 y la url del siguiente ejercicio. Caso contrario recibirás un 422 y que fue lo que falló.</p>
 
-      <h5>Si podes superar la habilidad de Sokoban, nos vemos en el ejercicio 4</h5>
+      <h5>Si estas listo para la mesa de poker, nos vemos en el ejercicio 4</h5>
     </div>
 
     <script>
