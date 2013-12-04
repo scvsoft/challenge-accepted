@@ -35,7 +35,7 @@
       El problema es que pasamos tanto tiempo pensando ejercicios que nos resulta dificil recordar las manos del juego y es por esto que necesitamos una herramienta que nos las recuerde.
       Es aqui donde entra tu experiencia, seras el encargado de generar esta herramienta!</p>
       <p>Las cartas de poker estan formadas por dos caracteres que definen el valor y el palo.</p>
-      <p>Los valores van del 2 al 9 y luego el diez mas las figuras se representan con D J Q y K</p>
+      <p>Los valores van del 2 al 9, el as se representa con una A y luego el diez mas las figuras se representan con D J Q y K</p>
       <p>Los palos son cuatro: Corazones (C), Picas (P), Rombos (R) o Treboles (T).</p>
       <p>Es asi que por ejemplo el 2 de corazones se representa "2C", el 10 de picas "DP" y el as de treboles "AT"</p>
       <p>Las jugadas posibles en el poker son las siguientes:</p>
@@ -46,17 +46,17 @@
         <li>pierna: tres cartas del mismo valor</li>
         <li>escalera: cinco cartas de distinto palo y valores consecutivos, el A puede estar delante del 2 o despues de la K</li>
         <li>color: cinco cartas del mismo palo que no formen escalera</li>
-        <li>full: tres cartas de un mismo valor y dos de otro valor diferente</li>
+        <li>full: tres cartas de un mismo valor y dos de otro valor diferente (pero iguales entre si). Es decir una pierna y un par.</li>
         <li>poker: cuatro cartas de un mismo valor</li>
         <li>escalera de color: cinco cartas del mismo palo y valores consecutivos, el A puede estar delante del 2 o despues de la K</li>
-        <li>escalera real: escalera de color con los valores mas altos; A K J Q 10</li>
+        <li>escalera real: 'escalera de color' con los valores mas altos; A K J Q D</li>
       </ul>
       <br />
       <p>En este ejercicio te vamos a dar una lista con las 5 cartas de una mano, esperando recibir la jugada esperamos que nos devuelvas la jugada de dicha mano.</p>
       <p>Alguno de (pero no todos) los test que vamos a ejecutar son:</p>
       <ul>
-        <li>Cuando le demos QC 5R 3T AP JC al programa, esperamos recibir 'carta mas alta'.</li>
-        <li>Cuando le demos AC KC QC JC DC al programa, esperamos recibir 'escalera real'</li>
+        <li>Cuando le demos QC 5R 3T AP JC al programa, esperamos recibir 'carta mas alta' (no tenemos nunguna combinacion valida de valores o palos).</li>
+        <li>Cuando le demos AC KC QC JC DC al programa, esperamos recibir 'escalera real' (todas las cartas del mismo palo -C- y de los 5 valores consecutivos mas altos - D J Q K A).</li>
       </ul>
       <p>Si crees que tenes el código que pueda pasar todos nuestros test, manda un POST a la siguiente url:</p>
       <div class="grey_box">
