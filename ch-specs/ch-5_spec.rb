@@ -10,7 +10,7 @@ describe 'Challenge 5' do
 
   CASES = [
     [['Hello'], "H\ne\nl\nl\no"],
-    [[''], ""],
+    [['""'], ""],
     [['Hello', 'World'], "HW\neo\nlr\nll\nod"],
     [['I', 'am', 'new', 'here'], "Ianh\n mee\n  wr\n   e"],
     # Executor removes trailing whitespace, so no spaces at the end of expected results.
