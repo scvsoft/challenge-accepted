@@ -9,23 +9,23 @@ BASE_URL = "http://scvsoft.com/challenge-accepted/"
 Challenge.all = [
   Challenge.new(
     1,
-    'LEVEL 1',
+    'Sheldon Cooper',
     "ch-1"),
   Challenge.new(
     2,
-    'LEVEL 2',
+    'Walter White',
     "ea660fcbaf91db3d"),
   Challenge.new(
     3,
-    'LEVEL 3',
+    'Nikola Tesla',
     "107ebb8c601db219"),
   Challenge.new(
     4,
-    'LEVEL 4',
+    'Stephen Hawking',
     "eb86accd09f2b31d"),
   Challenge.new(
     5,
-    'LEVEL 5',
+    'Spock',
     "e0f4b7103bb86b9e")
 ]
 
