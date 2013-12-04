@@ -32,23 +32,28 @@ Challenge.all = [
 Cuba.define do
   def self.handle_submission_for(challenge)
     on param('token'), param('code'), param('type') do |token, code, type|
-      if challenge.passed?(code, type)
-        Submission.create(
-          challenge_number: challenge.number,
-          token: token,
-          code: code,
-          type: type)
-        res.status = 200
-        res['X-NERD-LEVEL'] = challenge.nerd_level
+      unless Registration.find(token: token).empty?
+        if challenge.passed?(code, type)
+          Submission.create(
+            challenge_number: challenge.number,
+            token: token,
+            code: code,
+            type: type)
+          res.status = 200
+          res['X-NERD-LEVEL'] = challenge.nerd_level
 
-        if next_challenge = Challenge.next(challenge)
-          res.write "Next exercise: #{BASE_URL}#{next_challenge.path}"
+          if next_challenge = Challenge.next(challenge)
+            res.write "Next exercise: #{BASE_URL}#{next_challenge.path}"
+          else
+            res.write "You completed all exercises! Congratulations!"
+          end
         else
-          res.write "You completed all exercises! Congratulations!"
+          res.status = 422
+          res.write "WRONG! The output of the test was: #{challenge.output}"
         end
       else
-        res.status = 422
-        res.write "WRONG! The output of the test was: #{challenge.output}"
+        res.status = 401
+        res.write "Your token is not registered!"
       end
     end
     on default do
