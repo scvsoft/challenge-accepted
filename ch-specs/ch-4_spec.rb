@@ -524,7 +524,7 @@ describe 'Challenge 4' do
     [[7, 9, 1, 4, 3, 1, 6, 4, 1, 8], '36']
   ]
 
-  CASES + RANDOM_CASES.sample(10) do |args, result|
+  (CASES + RANDOM_CASES.sample(10)).each do |args, result|
     it "returns #{result} to param #{args}" do
       expect(@executor.execute(*args)).to eq result
     end
