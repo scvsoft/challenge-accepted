@@ -38,7 +38,8 @@ Cuba.define do
             challenge_number: challenge.number,
             token: token,
             code: code,
-            type: type)
+            type: type,
+            created_at: Time.now.to_f)
           res.status = 200
           res['X-NERD-LEVEL'] = challenge.nerd_level
 

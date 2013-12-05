@@ -7,9 +7,4 @@ class Submission < Ohm::Model
 
   index :token
   index :challenge_number
-
-  def initialize(params = {})
-    params[:created_at] = Time.now.to_i
-    super
-  end
 end
