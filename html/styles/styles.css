@@ -300,6 +300,12 @@ div.challenge p {
 	line-height: 1.3em;
 }
 
+div.challenge p.title{
+	font-family: "Lobster Two";
+	color: #F9A11B;
+	font-size: 1.4em;
+}
+
 div.challenge ul {
 	list-style-type: disc;
 	padding-bottom: 20px;
