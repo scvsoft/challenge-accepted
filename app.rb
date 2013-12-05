@@ -43,7 +43,7 @@ Cuba.define do
           res['X-NERD-LEVEL'] = challenge.nerd_level
 
           if next_challenge = Challenge.next(challenge)
-            res.write "Next exercise: #{BASE_URL}#{next_challenge.path}"
+            res.write "Next exercise: #{BASE_URL}#{next_challenge.path}.html"
           else
             res.write "You completed all exercises! Congratulations! We're checking if all your answers are valid and will publish the final result at http://scvsoft.com/challenge-accepted/winners on December 6, 2013 (also we will send you an email)."
           end
