@@ -39,7 +39,7 @@ Cuba.define do
             token: token,
             code: code,
             type: type,
-            created_at: Time.now.to_f)
+            created_at: Time.now.to_f) if Submission.find(challenge_number: challenge.number, token: token).empty?
           res.status = 200
           res['X-NERD-LEVEL'] = challenge.nerd_level
 
