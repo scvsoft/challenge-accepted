@@ -4,7 +4,7 @@ class Executor
   attr :type, :code_path
 
   def initialize(type, code_path)
-    @type = type
+    @type = type.downcase
     @code_path = code_path
   end
 
