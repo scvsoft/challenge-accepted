@@ -22,6 +22,7 @@ Si antes o durante el concurso tenes alguna duda, podes dejar un issue en este r
 Gracias por estar participando y muchos éxitos.
 MESSAGE_END
 
+  puts " Enviando mail a: #{registration.email}"
   begin
     Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
     Net::SMTP.start('smtp.gmail.com', 587, 'scvsoft.com', 'bigbrother@scvsoft.com', '5CV50ftR0ck5!', :plain) do |smtp|
