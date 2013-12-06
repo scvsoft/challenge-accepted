@@ -274,6 +274,19 @@ div.third {
 	-o-transition-delay: 500ms;
 }
 
+div.contenido.mentions {
+	left: 300px;
+	top: 460px;
+	transition-delay: 400ms;
+	-moz-transition-delay: 400ms; /* Firefox 4 */
+	-webkit-transition-delay: 400ms; /* Safari and Chrome */
+	-o-transition-delay: 400ms;
+}
+
+div.contenido.mentions > p {
+	text-align: center;
+}
+
 div.bubble.award .container {
 	padding-top:60%;
 }
@@ -459,7 +472,7 @@ div.registration_form.out {
 div.registration_form {
 	padding-top: 100px;
 	left: 320px;
-	top: 0px;	
+	top: 0px;
 	position: absolute;
 	z-index: 10;
 	transition: top 2s;
@@ -470,7 +483,7 @@ div.registration_form {
 	transition-delay: 500ms;
 	-moz-transition-delay: 500ms; /* Firefox 4 */
 	-webkit-transition-delay: 500ms; /* Safari and Chrome */
-	-o-transition-delay: 500ms;	
+	-o-transition-delay: 500ms;
 }
 
 div.registration_form input[type='text'] {
@@ -552,7 +565,7 @@ div.contenido{
 	transition-delay: 500ms;
 	-moz-transition-delay: 500ms; /* Firefox 4 */
 	-webkit-transition-delay: 500ms; /* Safari and Chrome */
-	-o-transition-delay: 500ms;		
+	-o-transition-delay: 500ms;
 }
 
 div.contenido h4 {
