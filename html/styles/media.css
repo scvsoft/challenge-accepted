@@ -342,10 +342,16 @@
 
   .price p{
     display:inline-block;
+    padding-left:10px;
+    color:#AEDCCF;
+  }
+
+  .price p.logo{
     width:41px;
     line-height: 43px;
     background: transparent url("../images/winner-icon-small.png") center center no-repeat;
     text-align: center;
+    padding-left:0;
   }
   .price h4{
     display:inline-block;
