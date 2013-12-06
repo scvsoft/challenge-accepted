@@ -247,6 +247,54 @@ div.bubble:hover strong {
 	color: #254F43;
 }
 
+div.first {
+	left: 500px;
+	top: 20px;
+	transition-delay: 700ms;
+	-moz-transition-delay: 700ms; /* Firefox 4 */
+	-webkit-transition-delay: 700ms; /* Safari and Chrome */
+	-o-transition-delay: 700ms;
+}
+
+div.second {
+	left: 350px;
+	top: 180px;
+	transition-delay: 600ms;
+	-moz-transition-delay: 600ms; /* Firefox 4 */
+	-webkit-transition-delay: 600ms; /* Safari and Chrome */
+	-o-transition-delay: 600ms;
+}
+
+div.third {
+	left: 650px;
+	top: 190px;
+	transition-delay: 500ms;
+	-moz-transition-delay: 500ms; /* Firefox 4 */
+	-webkit-transition-delay: 500ms; /* Safari and Chrome */
+	-o-transition-delay: 500ms;
+}
+
+div.bubble.award .container {
+	padding-top:60%;
+}
+
+.winner-position{
+	position:absolute;
+	width:95px;
+	height:101px;
+	background-color:blue;
+	top:50px;
+	left:78px;
+	background: transparent url("../images/winner-icon.png") center center no-repeat;
+}
+.winner-position p{
+	position:absolute;
+	top:40px;
+	left:40px;
+	font-size:2em;
+	color:#254f43;
+}
+
 div.out {
 	top: 2000px;
 }
