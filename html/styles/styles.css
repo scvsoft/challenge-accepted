@@ -283,8 +283,13 @@ div.contenido.mentions {
 	-o-transition-delay: 400ms;
 }
 
-div.contenido.mentions > p {
+div.contenido.mentions p {
 	text-align: center;
+	line-height: 1.2em;
+}
+
+div.contenido.mentions > h5 {
+	margin:2px 0 10px 0;
 }
 
 div.bubble.award .container {
